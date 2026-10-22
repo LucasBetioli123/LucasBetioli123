@@ -1,37 +1,35 @@
-# Visual GitHub profile
+# GitHub profile
 
-The profile is published at <https://github.com/LucasBetioli123> from this repository’s root `README.md`.
+The English profile is published at <https://github.com/LucasBetioli123> from the root `README.md`.
 
-## Content and design
+## Current layout
 
-- `README.md`: compact English profile, project links, contact links and an expandable research note.
-- `assets/*-v2.svg`: header, qualifications, technology logos, project illustrations and public GitHub data cards.
-- `scripts/build_visual_profile.py`: manually generates the current visuals.
-- `scripts/build_profile.py`: provides the GitHub data collection functions used by the visual generator; it can also generate the earlier visual assets.
+- A short introduction and qualifications.
+- Technology logos grouped into languages, AI/GPU/visualization, and backend/cloud.
+- A project table with links to Poligome and InVesalius.
+- Conventional GitHub Stats and Streak Stats cards, plus a monthly public contribution chart.
 
-## Refresh the current visuals
+The two remote statistics cards refresh through their image services, subject to GitHub's image caching. They use public account data and do not measure skill proficiency. The monthly chart is a dated snapshot of publicly visible contributions; the current month is partial.
 
-Use Python 3.10 or newer. Only the standard library is needed.
+## Refresh the monthly chart
+
+Python 3.10+; standard library only:
 
 ```bash
-python3 scripts/build_visual_profile.py
-git add assets/*-v2.svg
-git commit -m "Refresh visual profile"
+python3 scripts/build_classic_profile.py
+git add assets/contributions-classic.svg
+git commit -m "Refresh public contribution chart"
 git push
 ```
 
-The generator uses GitHub’s public APIs and contribution calendars, and downloads vector technology logos from Devicon. It fetches no private repository source or employer project names. An optional `GH_TOKEN` can enable GraphQL for the contribution calendar; do not commit any token.
-
-There is no active scheduled workflow. Charts show the snapshot date printed on the GitHub card.
-
-## Data interpretation
-
-- Repository and pull request counts are public GitHub data for this account.
-- Contributions cover the current and previous calendar years. The current month is partial.
-- Language percentages aggregate GitHub-reported bytes from original public repositories, excluding forks and this profile repository.
-- GitHub classifies notebook files as **Jupyter Notebook**, even when their cells contain Python. This chart does not measure language proficiency.
-- Project illustrations are conceptual visuals, not screenshots or model evaluation results.
+There is no active scheduled workflow. Earlier visual generators and SVGs remain as previous designs; the current README uses only the assets named `*-classic.svg` and the two statistics services.
 
 ## Credits
 
-Most technology logos are from [Devicon](https://github.com/devicons/devicon), used under its MIT license. See `assets/devicon-LICENSE.txt`. CUDA uses the NVIDIA brand mark distributed by [Simple Icons](https://github.com/simple-icons/simple-icons) under CC0. The VTK logo is by Steve Jordan / Kitware and is sourced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visualization_Toolkit_logo.svg), which identifies it as a public-domain text logo. VTK also provides its logo on [its official website](https://vtk.org/about/#logos). Original names, logos and trademarks belong to their respective owners.
+- The language, AI framework and cloud icon strips are from [Skill Icons](https://github.com/tandpfun/skill-icons), under its MIT license. See `assets/skill-icons-LICENSE.txt`.
+- CUDA uses the NVIDIA mark from [Simple Icons](https://github.com/simple-icons/simple-icons), under CC0.
+- The VTK logo by Steve Jordan / Kitware is sourced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visualization_Toolkit_logo.svg), identified there as a public-domain text logo. [VTK also distributes its logos](https://vtk.org/about/#logos).
+- Live cards: [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) and [GitHub Readme Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats).
+- Previously used Devicon logos retain their MIT notice in `assets/devicon-LICENSE.txt`.
+
+Names, logos and trademarks belong to their respective owners.
