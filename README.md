@@ -1,8 +1,9 @@
 <h1 align="center">Hi, I'm Lucas Betioli 👋</h1>
-<h3 align="center">AI Engineer at Alliage · Computer Vision & Medical AI</h3>
+<h3 align="center">Machine Learning Researcher · AI Engineer at Alliage</h3>
 
 <p align="center">
   <a href="mailto:lucasantoniobetioli@usp.br">Email</a> ·
+  <a href="https://scholar.google.com/citations?hl=pt-BR&user=3ao4CeIAAAAJ">Google Scholar</a> ·
   <a href="https://orcid.org/0009-0003-7282-9088">ORCID</a> ·
   <a href="https://poligome.com">Poligome</a>
 </p>
@@ -12,7 +13,7 @@
 - 🎓 **M.Sc. in Applied Physics to Medicine and Biology** — USP, 2025.
 - 🎓 **B.Sc. in Medical Physics** — USP, 2023.
 - 🌍 **Google Summer of Code mentor** for [InVesalius](https://github.com/invesalius/invesalius3).
-- 🧠 Research in **machine learning, tractography and TMS motor responsiveness**.
+- 🧠 Research interests: **machine learning, deep learning and computer vision**.
 
 ## Tech stack
 
